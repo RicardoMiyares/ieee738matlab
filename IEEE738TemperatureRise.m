@@ -66,7 +66,7 @@ Tc_test = 0.0;
 while ((I_ss_result > I_ss + I_ss_threshold) || (I_ss_result < I_ss - I_ss_threshold))
     Tc_test = (Tc_max + Tc_min) / 2;
     
-    I_ss_result = real(getI(Tc_test, R_T_high, R_T_low, T_high, T_low, Ta, rho_f, D, epsilon, alpha, Q_se, theta, area));
+    I_ss_result = real(getI(Tc_test, R_T_high, R_T_low, T_high, T_low, Ta, rho_f, D, epsilon, alpha, Q_se, theta, area)); %me tira error aca? ayuda
     
     if (I_ss_result == I_ss)
         break;
